@@ -1,6 +1,4 @@
-
-
-[<img align="center" width="80" height="80" alt="Icon" src="https://github.com/user-attachments/assets/23c9d4d6-3e64-4112-bb31-4ed90371a115" />](https://scriptdigger.github.io/DJ-Subtitle/)
+<img width="150" height="150" alt="logo-3" src="https://github.com/user-attachments/assets/f044dc69-ed9d-46af-9040-e02fba19bcea" />
 
 # [DJ Subtitle](https://scriptdigger.github.io/DJ-Subtitle/)
 
@@ -26,4 +24,5 @@ Setup instructions, tutorials, workflow, and examples are available here:
 **Workflow:**  
 Import Audio → Add Subtitles → Choose Style → Generate Typography → Customize
 
-[<img  width="350" height="auto" alt="script-ui-500" src="https://github.com/user-attachments/assets/bcb8292f-1a3e-428b-95c4-685aaaf747c5" />](https://scriptdigger.github.io/DJ-Subtitle/)
+<img width="500" height="741" alt="script-ui-500" src="https://github.com/user-attachments/assets/7e5cf2f3-5aaf-4719-bd99-57b29e443f97" />
+
