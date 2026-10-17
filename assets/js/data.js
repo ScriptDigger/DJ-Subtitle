@@ -34,7 +34,7 @@ const data = [
         "button": "download",
         "price": "15$",
         "description": "Glowing neon typography with vibrant colors and luminous effects."
-      }, {
+      }, /*{
         "url": "",
         "preview_url": "assets/projects/Paper-Cut.mp4",
         "preview_type": "video",
@@ -69,7 +69,7 @@ const data = [
         "button": "download",
         "price": "15$",
         "description": "Rounded backgrounds with smooth gradients for modern typography designs."
-      },/*
+      },
           {
             "url": "",
             "preview_url": "assets/projects/Brush.mp4",
@@ -196,7 +196,7 @@ const data = [
     header_logo: "assets/videos/logo.png",
     button_name: "Script's Shapes",
     title: "Typo Shapes & Movements Catalog",
-    subtitle: "Explore the available <strong>subtitle shapes, layouts, and movement styles</strong> included in the script.<br>Each shape is presented as a video preview, showing its <strong>number, order, and subtitle arrangement</strong> on screen.<br>Use the built-in controls to <strong>adjust the zoom, add camera shake, and customize the start and end points</strong> of the camera movement between subtitles.<br>All <strong>styles, colors, and fonts</strong> are fully customizable, giving you complete creative freedom to create the exact look and motion you want.", card_style: "video_card",
+    subtitle: "Explore the available <strong>subtitle shapes, layouts, and movement styles</strong> included in the script.<br>Each shape is presented as a video preview, showing its <strong>number, order, and subtitle arrangement</strong> on screen.<br>Use the built-in controls to <strong>adjust the zoom, add camera shake, and customize the start and end points</strong> of the camera movement between subtitles.<br>All <strong>styles, colors, and fonts</strong> are fully customizable, giving you complete creative freedom to create the exact look and motion you want.", card_style:"video_card",
     cards: [
       { url: "", description: "Simple subtitle structure", preview_url: "assets/shapes/01-Simple.mp4", name: "01-Simple" },
       { url: "", description: "Sweeps right and left", preview_url: "assets/shapes/02-Line Horizontal.mp4", name: "02-Line Horizontal" },
@@ -256,11 +256,13 @@ const data = [
     subtitle: "Follow the steps below to create your subtitles. It’s simple—we’ll guide you through every step.",
     card_style: "wide_image_card",
     cards: [
+      
+
       {
         url: "https://www.youtube.com/@bluepixelbox?t=8",
         preview_url: "assets/icons/run-script.jpg",
         name: "Run the Script",
-        description: "Open the downloaded project in After Effects. Run the script from File > Scripts > Run Script File, or use the provided script panel if available."
+        description: "Make sure the JavaScript engine is set to ExtendScript. Open the downloaded project in After Effects. Run the script from File > Scripts > Run Script File, or use the provided script panel if available."
       },
       {
         url: "https://www.youtube.com/@bluepixelbox?t=73",
