@@ -1,15 +1,22 @@
-/*
-     EDITABLE CATALOG DATA
-     Add, remove, or update sections and cards here. The interface is generated
-     from this array; no rendering code needs to change.
 
-     card_style:
-       - "video_card": video preview that plays on hover
-       - "wide_image_card": image preview
-     Each card uses: url, name, description, and optionally preview_url.
-     For video_card, preview_url is the preview video; if omitted, url is used.
-     For wide_image_card, preview_url is the image preview; if omitted, url is used.
-   */
+    const helpGuide = {
+      introduction: "New to the workflow? Start with a tutorial below for practical guidance, tips, and step-by-step walkthroughs.",
+      tutorials: [
+        {
+          title: "Getting Started with DJ Subtitle",
+          button_text:"Watch on YouTube",
+          description: "An introduction to the main workflow and essential features.",
+          url: "https://youtu.be/7c7NmvvK9KM"
+        },
+        {
+          title: "Have an account On Envato Elements?",
+          button_text:"Start Download",
+          description: "Download all our projects and build your next project with BluePixelBox.",
+          url: "https://elements.envato.com/user/BluePixelBox/video-templates"
+        }
+      ]
+    };
+
 const data = [
   {
     header_logo: "assets/videos/logo.png",
@@ -32,7 +39,7 @@ const data = [
         "preview_type": "video",
         "name": "Neon Glowing",
         "button": "download",
-        "price": "15$",
+        "price": "18$",
         "description": "Glowing neon typography with vibrant colors and luminous effects."
       }, /*{
         "url": "",
@@ -255,95 +262,106 @@ const data = [
     title: "Help Documentation",
     subtitle: "Follow the steps below to create your subtitles. It’s simple—we’ll guide you through every step.",
     card_style: "wide_image_card",
-    cards: [
-      
+      /**
+       01:16 aftereffects Expression engine (Javascrpt|Extendscript)
+       01:30 customize style and font
+       02:20 Create a Workspace
+       02:25 run DJ-subtitle script
+       02:25 import subtitle
+       03:03 edit subtitle
+       03:36 generate subtitle to typography
+       04:20 regenerate typography
+       04:38 customize subtitle
+       04:45 export srt file subtitle
+       04:55 create a subtitle
+       */
+   cards: [
 
-      {
-        url: "https://www.youtube.com/@bluepixelbox?t=8",
-        preview_url: "assets/icons/run-script.jpg",
-        name: "Run the Script",
-        description: "Make sure the JavaScript engine is set to ExtendScript. Open the downloaded project in After Effects. Run the script from File > Scripts > Run Script File, or use the provided script panel if available."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox?t=73",
-        preview_url: "assets/icons/workspace.jpg",
-        name: "Create a Workspace",
-        description: "Create a new composition to use as your main workspace. This is where you will import your audio and prepare your subtitles."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox",
-        preview_url: "assets/icons/import-audio.jpg",
-        name: "Import Your Audio",
-        description: "Import your audio file into After Effects and place it in your workspace composition. Select the audio layer before running the script."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox",
-        preview_url: "assets/icons/import-subtitle.jpg",
-        name: "Import SRT Subtitles [Or]",
-        description: "Import an SRT subtitle file into the script to load your existing subtitle text and timing. You can also create subtitles manually."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox",
-        preview_url: "assets/icons/create-subtitle.jpg",
-        name: " [Or] Create Subtitles Manually",
-        description: "Move the timeline playhead to the desired start time, enter your text in the script's text editor, and click the Add (+) button to create a subtitle. Use the Delete button to remove subtitles."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox",
-        preview_url: "assets/icons/navigate-subtitle.jpg",
-        name: "Edit and Navigate Subtitles",
-        description: "Select a subtitle marker to edit its text. Use the Previous and Next navigation buttons to move between subtitles and make corrections quickly."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox",
-        preview_url: "assets/icons/markers.jpg",
-        name: "Understand Subtitle Markers",
-        description: "Each subtitle is stored as a marker on the selected layer. The marker contains the subtitle data, and its duration determines how long the subtitle appears. Save your project to keep your subtitle data safe inside After Effects."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox",
-        preview_url: "assets/icons/typo-style.jpg",
-        name: "Choose Your Typography Style",
-        description: "Choose the subtitle animation and layout you want to use. Customize the typography settings before generating your final composition."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox",
-        preview_url: "assets/icons/create-typo.jpg",
-        name: "Generate Your Typography",
-        description: "Select the layer containing your subtitle markers and click Make Typography. Wait a few seconds while the script creates the required layers and animations."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox",
-        preview_url: "assets/icons/preview-subtitle.jpg",
-        name: "Preview Your Composition",
-        description: "Open the generated composition, which uses the selected layer's name. Play the timeline to preview your animated subtitles and check the timing, layout, and overall result."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox",
-        preview_url: "assets/icons/edit-typo.jpg",
-        name: "Edit and Regenerate",
-        description: "If you find a mistake or want to change the subtitles, return to the original marker layer and edit the text or timing. Click Make Typography again to update the generated composition."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox",
-        preview_url: "assets/icons/customise-indinidual.jpg",
-        name: "Customize Individual Subtitles",
-        description: "Open the generated composition to access the individual subtitle layers. Each subtitle is a precomposition that you can customize independently, including its font, layout, and typography animation."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox",
-        preview_url: "assets/icons/edit-colors.jpg",
-        name: "Edit Colors and Global Settings",
-        description: "Open Edit Colors to customize the typography colors, scene shake intensity, and other available settings. Changing the text font in the designated control composition can update the font across the entire typography sequence."
-      },
-      {
-        url: "https://www.youtube.com/@bluepixelbox",
-        preview_url: "assets/icons/export-subtitle.jpg",
-        name: "Export Subtitles to SRT",
-        description: "Export your subtitle data as an SRT file whenever you need a separate subtitle file for video editing, publishing, or other applications."
-      }
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=76",
+    preview_url: "assets/icons/run-script.jpg",
+    name: "Set Expression Engine",
+    description: "Before starting, make sure the project's expression engine is set to ExtendScript."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=140",
+    preview_url: "assets/icons/workspace.jpg",
+    name: "Create a Workspace",
+    description: "Create a composition as your main workspace. This is where you will prepare your audio and subtitles."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=140",
+    preview_url: "assets/icons/import-audio.jpg",
+    name: "Import Your Audio",
+    description: "Import your audio and place it inside the workspace composition."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=145",
+    preview_url: "assets/icons/import-subtitle.jpg",
+    name: "Import SRT Subtitles [Or]",
+    description: "Select your subtitle layer and import an SRT file to load its text and timing as layer markers."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=295",
+    preview_url: "assets/icons/create-subtitle.jpg",
+    name: "[Or] Create Subtitles Manually",
+    description: "Create subtitles manually by adding markers and entering your text directly with DJ Subtitle."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=183",
+    preview_url: "assets/icons/navigate-subtitle.jpg",
+    name: "Edit and Navigate Subtitles",
+    description: "Use Previous and Next to navigate between subtitles, edit the text, add new subtitles, or delete existing ones."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=183",
+    preview_url: "assets/icons/markers.jpg",
+    name: "Subtitle Markers",
+    description: "Each subtitle is stored as a layer marker. Its position defines the start time, and its duration controls how long the subtitle appears."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=90",
+    preview_url: "assets/icons/typo-style.jpg",
+    name: "Customize Typography Style",
+    description: "Preview the style and customize its font, colors, and available controls before generating your typography."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=216",
+    preview_url: "assets/icons/create-typo.jpg",
+    name: "Generate Your Typography",
+    description: "Choose an animation shape and click Make Typography. DJ Subtitle will generate the animated typography from your subtitles."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=216",
+    preview_url: "assets/icons/preview-subtitle.jpg",
+    name: "Preview Your Typography",
+    description: "Open the generated composition to preview your animated subtitles and check the timing and result."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=260",
+    preview_url: "assets/icons/edit-typo.jpg",
+    name: "Edit and Regenerate",
+    description: "Edit your original subtitle data and generate again. The existing typography will be updated with your changes."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=278",
+    preview_url: "assets/icons/customise-indinidual.jpg",
+    name: "Customize Individual Subtitles",
+    description: "Open the generated compositions to customize individual subtitles, layers, fonts, animations, and other details."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=90",
+    preview_url: "assets/icons/edit-colors.jpg",
+    name: "Edit Colors & Global Settings",
+    description: "Use Edit Colors and the style controls to change colors and other global settings. Set your font before generating."
+  },
+  {
+    url: "https://youtu.be/7c7NmvvK9KM?t=285",
+    preview_url: "assets/icons/export-subtitle.jpg",
+    name: "Export Subtitles to SRT",
+    description: "Export your subtitle data as an SRT file for reuse in other projects, editors, or platforms."
+  }
 
-
-    ]
+]
   }
 ];

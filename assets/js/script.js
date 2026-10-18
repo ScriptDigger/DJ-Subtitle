@@ -1,19 +1,4 @@
 
-    const helpGuide = {
-      introduction: "New to the workflow? Start with a tutorial below for practical guidance, tips, and step-by-step walkthroughs.",
-      tutorials: [
-        {
-          title: "Getting Started with DJ Subtitle",
-          description: "An introduction to the main workflow and essential features.",
-          url: "https://www.youtube.com/@bluepixelbox"
-        },
-        {
-          title: "Tips for a Faster Workflow",
-          description: "Learn a few practical ways to organize resources and work efficiently.",
-          url: "https://www.youtube.com/@bluepixelbox"
-        }
-      ]
-    };
 
     const tabsElement = document.getElementById("tabs");
     const sectionLogo = document.getElementById("section-logo");
@@ -299,33 +284,71 @@
         return;
       }
 
-      tutorials.forEach(tutorial => {
-        const item = makeElement("article", "tutorial");
-        const icon = makeElement("div", "tutorial-icon");
-        icon.innerHTML = icons.play;
-        const content = makeElement("div", "tutorial-content");
-        content.appendChild(makeElement("h3", "tutorial-title", tutorial.title || "Tutorial"));
-        content.appendChild(makeElement("p", "tutorial-description", tutorial.description || ""));
-        const url = safeUrl(tutorial.url);
-        if (url && /^https:\/\/(www\.)?youtube\.com\/|^https:\/\/youtu\.be\//i.test(url)) {
-          const link = makeElement("a", "tutorial-link");
-          link.href = url;
-          link.target = "_blank";
-          link.rel = "noopener noreferrer";
-          link.appendChild(document.createTextNode("Watch on YouTube"));
-          const externalIcon = makeElement("span");
-          externalIcon.innerHTML = icons.external;
-          link.appendChild(externalIcon);
-          content.appendChild(link);
-        } else {
-          const unavailable = makeElement("span", "tutorial-link", "YouTube link unavailable");
-          unavailable.setAttribute("aria-disabled", "true");
-          unavailable.style.opacity = ".55";
-          content.appendChild(unavailable);
-        }
-        item.append(icon, content);
-        tutorialsElement.appendChild(item);
-      });
+    
+
+tutorials.forEach(function(tutorial) {
+  var item = makeElement("article", "tutorial");
+
+  var icon = makeElement("div", "tutorial-icon");
+  icon.innerHTML = icons.play;
+
+  var content = makeElement("div", "tutorial-content");
+
+  content.appendChild(
+    makeElement("h3", "tutorial-title", tutorial.title || "Tutorial")
+  );
+
+  content.appendChild(
+    makeElement("p", "tutorial-description", tutorial.description || "")
+  );
+
+  var url = safeUrl(tutorial.url);
+
+  if (url) {
+    var link = makeElement("a", "tutorial-link");
+
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+
+    link.appendChild(
+      document.createTextNode(
+        tutorial.button_text || "Learn More"
+      )
+    );
+
+    var externalIcon = makeElement("span");
+    externalIcon.innerHTML = icons.external;
+
+    link.appendChild(externalIcon);
+    content.appendChild(link);
+
+  } else {
+    var unavailable = makeElement(
+      "span",
+      "tutorial-link",
+      tutorial.button_text || "Link unavailable"
+    );
+
+    unavailable.setAttribute("aria-disabled", "true");
+    unavailable.style.opacity = ".55";
+
+    content.appendChild(unavailable);
+  }
+
+  item.appendChild(icon);
+  item.appendChild(content);
+
+  tutorialsElement.appendChild(item);
+});
+
+
+
+
+
+
+
+
     }
 
     searchInput.addEventListener("input", event => {
