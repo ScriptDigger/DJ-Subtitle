@@ -39,7 +39,7 @@ const data = [
         "preview_type": "video",
         "name": "Neon Glowing",
         "button": "download",
-        "price": "18$",
+        "price": "16$",
         "description": "Glowing neon typography with vibrant colors and luminous effects."
       }, /*{
         "url": "",
