@@ -34,7 +34,7 @@ const data = [
         "price": "Free",
         "description": "For testing the script and using it with standard subtitles, you can use this template."
       }, {
-        "url": "https://videohive.net/user/bluepixelbox/portfolio",
+        "url": "https://videohive.net/item/neon-style-dj-subtitle/65560747",
         "preview_url": "assets/projects/neon.mp4",
         "preview_type": "video",
         "name": "Neon Glowing",
