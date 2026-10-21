@@ -41,7 +41,7 @@ const data = [
         "button": "download",
         "price": "16$",
         "description": "Glowing neon typography with vibrant colors and luminous effects."
-      }, /*{
+      }, {
         "url": "",
         "preview_url": "assets/projects/Paper-Cut.mp4",
         "preview_type": "video",
@@ -50,7 +50,7 @@ const data = [
         "price": "15$",
         "description": "Layered paper-cut typography with cutout shapes and handcrafted depth."
       },
-
+/*
       {
         "url": "",
         "preview_url": "assets/projects/Cartoony.mp4",
